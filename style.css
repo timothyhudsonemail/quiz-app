@@ -1,5 +1,17 @@
-.background-color-blue {
-  background-color: lightblue;
+body {
+  background-image: url("images/checkerboard.jpg");
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.main {
+  background-color: white;
+  padding: 10px;
+  margin:20px;
+  border: 3px;
+  border-style: solid;
+  border-color:red;
 }
 
 .hide {
@@ -10,11 +22,21 @@
   color: red;
 }
 
-.center {
-  text-align: center;
+.numbers-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.big1 {
-  font-size: 40px;
-  color: white;
+
+.head {
+  background-color: hotpink;
+  border-style: solid;
+  border: 3 px;
+  border-color:yellow;
+  margin-top:20px;
+}
+
+p {
+  font-size: x-large;
 }
