@@ -1,75 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Skateboarding Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-<body class="center">
+  <body class="center">
     
-  <div class="head">
-  <h1>Skateboarding Quiz</h1></div>
+    <div class="head">
     
-  <div class="intro main">
-  <img width=90% src="images/patmcgee2.jpg">
-  <p>Test your knowledge of skateboard history!</p>
-  <button class="beginQuiz">Begin Quiz</button>
-  </div>
-
+      <h1>Skateboarding Quiz</h1></div>
   
-  <div class="feedback-box main">
-  <h2><span class="feedBackSpot red"></span></h2>
-  <br><br>
-  <img id="imageSpot" width=90% src="">
-  <br><br>
-  <span class="responseSpot"></span>
-  <br><br>
-  <button class="newButton">Next Question</button>
-  </div>
-
-
-  <div class="numbers-box main">
-  <h2>Question# <br>
-  <span class="num1">1</span>/5</h2>
-  <h2>Score <br>
-  <span class="num2 red score">0</span></h2>
-  </div>
-
-  
-  
-        
-  <div class="question-box main">
-  <p><span class="questionSpot"></span></p>
-  <br>
-  <img id="questionPicture" width=90% src="">
+      <div class="intro main">
+      <img width=90% src="images/patmcgee2.jpg" alt="Patty McGee riding her skateboard on a sunny day">
+      <p> <span class="questionSpot">Test your knowledge of skateboard history!</span></p>
+     <button class="beginQuiz">Begin Quiz</button>
       
-  <form class="choicesSpot">
-  <label class="labelForTrueFalse" for="trueFalseTest">Answer</label>
-  <br>
-  <select name="trueFalse2" id="trueFalse" required>
-  <option id="ans1" value="0"></option>
-  <option id="ans2" value="1"></option>
-  <option id="ans3" value="2"></option>
-  <option id="ans4" value="3"></option>
-  </select>
-  </form>
-  <br>
-  <button class="addNum1">Submit</button>
-  </div>
+      
+    </div>
+    
+    
 
-  <div class="allDone main">
-  <p>Congratulations you finished!</p>
-  <p>You got <span class="howMany red"></span>
-  </p>
-  <button class="restarter">Restart quiz</button>
-  </div>
+    <main class="restOfIt hide">
 
-</body>
+    
+    
+      <section role="Feedback" class="feedback-box main hide">
+      <h2><span class="feedBackSpot red"></span></h2>
+      <br><br>
+      <img id="imageSpot" width=90% src="" alt="">
+      <br><br>
+      <span class="responseSpot"></span>
+      <br><br>
+      <button class="newButton">Next Question</button>
+      </section>
+
+      
+      <div class="wholeThing">
+
+
+      <section role="Score Box" class="numbers-box main">
+      <h2>Question# <br>
+      <span class="num1">1</span>/5</h2>
+      <h2>Score <br>
+      <span class="num2 red score">0</span></h2>
+      </section>
+
+      
+      <section class="main">
+        
+      <section role="Question Box" class="question-box">
+      <p><span class="questionSpot"></span></p>
+      <br>
+      <img id="questionPicture" width=90% src="">
+      
+      <form role="Mutiple Choice Answers" class="choicesSpot hide">
+      <label class="labelForTrueFalse" for="trueFalseTest">Answer</label>
+      <br>
+      <select name="trueFalse2" id="trueFalse" required>
+      <option id="ans1" value="0"></option>
+      <option id="ans2" value="1"></option>
+      <option id="ans3" value="2"></option>
+      <option id="ans4" value="3"></option>
+      </select>
+      </form>
+      <br>
+
+     <button class="addNum1">Submit</button>
+     </section>
+
+     </section>
+     </div>
+    </main>
+   
+ 
+
+    
+    <section role="Finished Popup" class="allDone main hide">
+    <p>Congratulations you finished!</p>
+    <p>You got <span class="howMany red"></span>
+    </p>
+    <p class="endResult"></p>
+    <button class="restarter">Restart quiz</button>
+    </div>
+
+    </span>
+  
+  </body>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
-
 </html>
