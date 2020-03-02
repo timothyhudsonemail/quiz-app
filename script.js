@@ -133,7 +133,7 @@ $(document).ready(function(){
     }
     if (num2<=3){
       $(".endResult").text("Not so good, might want to study");}
-    else if (num2=4){
+    else if (num2==4){
     $(".endResult").text("That's pretty good!");
     }
     else $(".endResult").text("Great! You're a pro");
