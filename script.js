@@ -53,6 +53,8 @@ $(document).ready(function(){
 
       
       let currentAns=longAnswers[question];
+      let selectedOption = $("input[name=trueFalse]:checked").val();
+
 
       if(num1<5) {
 
@@ -77,7 +79,7 @@ $(document).ready(function(){
       }
       
 
-      if (trueFalse.value==answers[answer]) {
+      if (selectedOption==answers[answer]) {
         $(".feedBackSpot").text("That's right!");
         $(".responseSpot").removeClass("hide");
         $(".score").addClass("red");
@@ -103,7 +105,7 @@ $(document).ready(function(){
       $("#ans3").text(currentAns[2]);
       $("#ans4").text(currentAns[3]);
 
-      
+
       $(".wholeThing").addClass("hide");
       $(".feedback-box").removeClass("hide");
       
@@ -114,7 +116,9 @@ $(document).ready(function(){
   $(".responseSpot").text(responses[response]);
   document.getElementById('imageSpot').src=images[response];
   document.getElementById('imageSpot').alt=imageAlts[response];
-  if (trueFalse.value==answers[answer]) {
+ 
+ 
+  if (selectedOption==answers[answer]) {
   num2++;}
   num1++;
   response++;}
