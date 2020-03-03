@@ -66,8 +66,10 @@ $(document).ready(function(){
       
       if (num1==3) {
         document.getElementById('questionPicture').src='images/bertlemannslide.jpg';
+        $("#questionPicture").removeClass("hide");
       }
-      else {document.getElementById('questionPicture').src="";}
+      else {document.getElementById('questionPicture').src="";
+      $("#questionPicture").addClass("hide");}
     
 
       if (num1>0) {
@@ -100,6 +102,11 @@ $(document).ready(function(){
       $("#ans2").text(currentAns[1]);
       $("#ans3").text(currentAns[2]);
       $("#ans4").text(currentAns[3]);
+
+      $("#ans1Label").text(currentAns[0]);
+      $("#ans2Label").text(currentAns[1]);
+      $("#ans3Label").text(currentAns[2]);
+      $("#ans4Label").text(currentAns[3]);
 
       
       $(".wholeThing").addClass("hide");
