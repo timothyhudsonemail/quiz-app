@@ -103,11 +103,6 @@ $(document).ready(function(){
       $("#ans3").text(currentAns[2]);
       $("#ans4").text(currentAns[3]);
 
-      $("#ans1Label").text(currentAns[0]);
-      $("#ans2Label").text(currentAns[1]);
-      $("#ans3Label").text(currentAns[2]);
-      $("#ans4Label").text(currentAns[3]);
-
       
       $(".wholeThing").addClass("hide");
       $(".feedback-box").removeClass("hide");
