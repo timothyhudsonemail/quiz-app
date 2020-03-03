@@ -35,7 +35,7 @@ $(document).ready(function(){
       $(".restOfIt").removeClass("hide");
       $(".num1").text(num1);
       $(".questionSpot").text(questions[question]);
-      $("form").removeClass("hide");
+      $(".choicesSpot").removeClass("hide");
       $(".addNum1").text("submit");
       $("#ans1").text(currentAns[0]);
       $("#ans2").text(currentAns[1]);
@@ -63,7 +63,7 @@ $(document).ready(function(){
       
       $(".num1").text(num1);
       $(".questionSpot").text(questions[question]);
-      $("form").removeClass("hide");
+      $(".choicesSpot").removeClass("hide");
       $(".addNum1").text("submit");
       
       if (num1==3) {
